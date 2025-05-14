@@ -1,63 +1,125 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>การ์ดเชิญงานแต่งงาน</title>
-    <style>
-        body {
-            font-family: 'Prompt', sans-serif;
-            text-align: center;
-            background-color: #fdf6f0;
-            color: #333;
-            padding: 40px;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        h2 {
-            font-size: 1.8em;
-            margin: 20px 0;
-        }
-        p {
-            font-size: 1.2em;
-            margin: 10px 0;
-        }
-        .names {
-            font-size: 2em;
-            font-weight: bold;
-            margin: 20px 0;
-        }
-        .date-place {
-            margin: 30px 0;
-        }
-        .map {
-            margin-top: 30px;
-        }
-        iframe {
-            width: 100%;
-            max-width: 600px;
-            height: 400px;
-            border: none;
-            border-radius: 12px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kanussanun & Taywin Wedding</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Sarabun', sans-serif;
+      margin: 0;
+      background: #fffaf9;
+      color: #4a3b47;
+    }
+    header, section {
+      padding: 2rem;
+      text-align: center;
+    }
+    header {
+      background: linear-gradient(#fffaf9, #f3c0b6);
+    }
+    h1 {
+      font-size: 2rem;
+      margin: 0.5rem 0;
+    }
+    .parents {
+      margin-top: 1rem;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+    .date, .venue {
+      font-weight: 500;
+    }
+    .timeline {
+      margin: 1rem auto;
+      max-width: 300px;
+      text-align: left;
+    }
+    .timeline div {
+      padding: 0.5rem 0;
+    }
+    .theme-colors {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    .color-circle {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+    .rsvp-form input, .rsvp-form textarea, .rsvp-form button {
+      width: 100%;
+      max-width: 400px;
+      margin: 0.5rem auto;
+      display: block;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    .rsvp-form button {
+      background: #b6a3b8;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    footer {
+      font-size: 0.8rem;
+      color: #888;
+      text-align: center;
+      margin-top: 2rem;
+      padding-bottom: 2rem;
+    }
+  </style>
 </head>
 <body>
-    <h1>ขอเรียนเชิญร่วมงานมงคลสมรส</h1>
-    <div class="names">
-        เทวินทร์ &amp; รสิจัส
+  <header>
+    <h1>Kanussanun & Taywin</h1>
+    <p class="parents">
+      ประสิทธิ์ นามวิริยะโชติ &nbsp;•&nbsp; ณัฏฐณิชา ทิมสวัสดิ์<br>
+      สมพงษ์ วงศ์รัตนกาญจน์ &nbsp;•&nbsp; รัตนา วงศ์รัตนกาญจน์
+    </p>
+    <p>ขอเรียนเชิญร่วมเป็นเกียรติในงานมงคลสมรสของ</p>
+    <p><strong>คณัสนันท์ นามวิริยะโชติ (แพท)</strong><br>และ<br><strong>เทวินทร์ วงศ์รัตนกาญจน์ (นัท)</strong></p>
+    <p>วันอาทิตย์ที่ <strong>20 กรกฎาคม 2568</strong></p>
+    <p class="venue">ณ เสวย ริเวอร์วิว พระราม 3 ห้องมูน MOON HALL</p>
+  </header>
+
+  <section>
+    <h2>กำหนดการ</h2>
+    <div class="timeline">
+      <div>09:30 น. – พิธียกน้ำชา</div>
+      <div>11:30 น. – รับประทานอาหาร (โต๊ะจีน)</div>
     </div>
-    <div class="date-place">
-        <p>วันอาทิตย์ที่ 20 กรกฎาคม 2568</p>
-        <p>เวลา 11:00 น.</p>
-        <p>ณ เสวย ริเวอร์วิว</p>
+  </section>
+
+  <section>
+    <h2>Theme Color</h2>
+    <div class="theme-colors">
+      <div class="color-circle" style="background:#eed3d1" title="#eed3d1"></div>
+      <div class="color-circle" style="background:#dfc3aa" title="#dfc3aa"></div>
+      <div class="color-circle" style="background:#f3c0b6" title="#f3c0b6"></div>
+      <div class="color-circle" style="background:#cebabb" title="#cebabb"></div>
+      <div class="color-circle" style="background:#b6a3b8" title="#b6a3b8"></div>
     </div>
-    <h2>เราหวังเป็นอย่างยิ่งว่าจะได้พบคุณในวันสำคัญของเรา</h2>
-    <div class="map">
-        <h2>แผนที่</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.771929927825!2d100.54077833801452!3d13.671627599203013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2a1e056c604d1%3A0xdcff23986d95eaf3!2z4LmA4Liq4Lin4LiiIOC4o-C4tOC5gOC4p-C4reC4o-C5jOC4p-C4tOC4pyDguJ7guKPguLDguKPguLLguKEz!5e0!3m2!1sth!2sth!4v1746800929665!5m2!1sth!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+  </section>
+
+  <section>
+    <h2>ตอบรับคำเชิญ (RSVP)</h2>
+    <form class="rsvp-form" action="https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse" method="POST" target="_blank">
+      <input type="text" name="entry.1234567890" placeholder="ชื่อผู้ร่วมงาน" required>
+      <input type="number" name="entry.2345678901" placeholder="จำนวนผู้ติดตาม" min="0">
+      <textarea name="entry.3456789012" placeholder="ข้อความถึงบ่าวสาว (ไม่จำเป็น)" rows="3"></textarea>
+      <button type="submit">ส่งคำตอบ</button>
+    </form>
+    <p>หรือสแกน QR Code บนการ์ดเพื่อดูแผนที่</p>
+  </section>
+
+  <footer>
+    © 2025 Kanussanun & Taywin. All Rights Reserved.
+  </footer>
 </body>
 </html>
